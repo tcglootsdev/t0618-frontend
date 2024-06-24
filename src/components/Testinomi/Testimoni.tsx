@@ -3,10 +3,10 @@
 function Testimoni() {
   return (
     <section id="contact">
-      <div className="container max-w-screen-xl bg-white py-12">
-        <div className="justify-between py-12">
+      <div className="container max-w-screen-xl bg-white sm:py-12">
+        <div className="justify-between sm:py-12 py-6">
           <h6 className="font-bold text-start uppercase font-serif font-thin text-3xl text-gray-400">
-            Galleria
+            Testimonals
           </h6>
         </div>
         <div className="bg-[#FAF6F2] w-full">
@@ -19,7 +19,7 @@ function Testimoni() {
               />
               <p className="uppercase text-xl font-serif text-orange-800">Maria Santos</p>
             </div>
-            <div className="text-center mt-8">
+            <div className="text-center mt-8 sm:p-1 p-3">
               <p className="uppercase text-xs font-serif text-orange-800">I have been a very satisfied client for over 20 years. </p>
               <p className="uppercase text-xs font-serif text-orange-800">Fatumata became a really good friend. Plus, she is an expert in her line of work. </p>
             </div>
@@ -80,10 +80,10 @@ function Testimoni() {
       </div>
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="mb-12 rounded-sm bg-white">
-          <h2 className="mb-12 text-2xl font-bold text-orange-900 text-center">
+          <h2 className="sm:mb-12 mb-3 sm:text-2xl text-xl font-bold text-orange-900 text-center sm:mt-1 mt-4">
             É cliente? Deixe o seu comentário
           </h2>
-          <div className="border p-12 place-self-center mx-72">
+          <div className="border sm:p-12 p-4 sm:place-self-center sm:mx-72 mx-4">
               <div className="flex gap-3">
                 <div className="flex gap-0.5 text-gray-500">
                   <svg
@@ -161,7 +161,7 @@ function Testimoni() {
               </div>
           </div>
                 
-          <div className="w-full pt-12 text-center">
+          <div className="w-full sm:pt-12 pt-4 text-center">
             <button className="rounded-sm bg-[#A5775E] px-9 py-4 text-xl font-serif text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
               Deixar comentários
             </button>

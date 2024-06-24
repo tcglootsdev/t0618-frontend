@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 
 function Service() {
   return (
-    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-white py- sm:py-12">
+    <div className="relative flex sm:min-h-screen flex-col justify-center overflow-hidden bg-white py- sm:py-12">
       <div className="min-h-28 ">
         <div className="max-w-screen-xl mx-auto py-4 ">
           <div className="ms-4 sm:ms-0">
@@ -15,17 +15,17 @@ function Service() {
 
           <div className="rounded-sm overflow-hidden mt-10 relative">
             {/* <div className="absolute inset-0 h-full w-full bg-gray-900/75" /> */}
-            <img src="/images/Home/img_type_main.png" className="" alt="" />
+            <img src="/images/Home/img_type_main.png" className="sm:w-full sm:h-[700px] h-[600px] object-center object-cover" alt="" />
             
             <div className="absolute sm:inset-y-0 sm:left-0 sm:h-full sm:w-1/2 inset-x-0 bottom-0 h-1/2 w-full bg-gray-700/75" >
-              <div className="my-48 mx-20">
-                <p className="font-serif italic font-thin text-4xl uppercase mb-16 mt-16" color="white">
+              <div className="sm:my-48 my-5 mx-20">
+                <p className="font-serif italic font-thin sm:text-4xl text-2xl uppercase sm:my-16" color="white">
                   CABELO NATURAL
                 </p>
-                <p color="white" className="font-sans text-sm mt-8 w-full md:max-w-full lg:max-w-3xl">
+                <p color="white" className="font-sans text-sm sm:mt-8 mt-3 w-full md:max-w-full lg:max-w-3xl">
                   Transforme o seu visual com extensões luxuosas e perucas feitas à medida e aplicadas no Paraíso das Princesa. Explore a nossa coleções, disponíveis em diversas texturas e cores para combinar com o seu estilo único
                 </p>
-                <div className="mt-12 gap-8 flex mb-5">
+                <div className="sm:mt-12 mt-3 gap-8 flex mb-5">
                   <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-sm border border-transparent bg-[#A5775E]">FAZER MARCAÇÃO</button>
                 </div>
               </div>

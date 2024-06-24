@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 function Gallery() {
   return (
     <section>
-      <div className="max-w-screen-xl bg-white mx-auto">
+      <div className="max-w-screen-xl bg-white mx-auto sm:mt-1 mt-8">
         <div className="justify-between">
           <h6 className="font-bold text-start uppercase font-serif font-thin text-3xl text-gray-400">
             Galleria
@@ -24,7 +24,7 @@ function Gallery() {
           </li>
 
           <li>
-            <a href="#" className="group block overflow-hidden">
+            <a href="#" className="group sm:block hidden overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 alt=""
@@ -34,7 +34,7 @@ function Gallery() {
           </li>
 
           <li>
-            <a href="#" className="group block overflow-hidden">
+            <a href="#" className="group sm:block hidden overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 alt=""
@@ -44,7 +44,7 @@ function Gallery() {
           </li>
 
           <li>
-            <a href="#" className="group block overflow-hidden">
+            <a href="#" className="group sm:block hidden overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                 alt=""
