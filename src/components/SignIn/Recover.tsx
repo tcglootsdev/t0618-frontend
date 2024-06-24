@@ -1,7 +1,9 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Recover = () => {
+  const router = useRouter();
   return (
     <section>
       <div className="grid grid-cols-5 bg-[#F9F9F9]">
@@ -61,7 +63,7 @@ const Recover = () => {
                 </div>
                 
                 <div className="grid gap-y-4 mt-8">
-                  <button type="submit" className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-lg font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-blue-700">Submit</button>
+                  <button type="submit" className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-lg font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-blue-700" onClick={()=>router.push('/signin')}>Submit</button>
                 </div>
               </form>
             </div>
@@ -69,7 +71,7 @@ const Recover = () => {
             <div className="text-center mt-40">
               <p className="mt-2 text-lg text-black dark:text-neutral-400">
                 Back to{' '}
-                <a className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500">
+                <a className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500 hover:cursor-pointer" onClick={()=>router.push('/signin')}>
                   Sign In
                 </a>
               </p>

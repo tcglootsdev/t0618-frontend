@@ -1,6 +1,7 @@
 "use client";
 
 import Card from "./Card/Card";
+import { useRouter } from "next/navigation";
 
 const cards_data = [
   {
@@ -48,6 +49,7 @@ const cards_data = [
 ];
 
 const Service = () => {
+  const router = useRouter();
   return (
     <div className="p-5 bg-white h-screen overflow-auto">
       <div className="mb-5">
@@ -80,7 +82,7 @@ const Service = () => {
             </div>
           </div>
           <div>
-            <button className="bg-[#CDCDCD] text-lg rounded-md p-3 w-full border border-black hover:bg-[#2F80ED]">Continue</button>
+            <button className="bg-[#CDCDCD] text-lg rounded-md p-3 w-full border border-black hover:bg-[#2F80ED]" onClick={()=>router.push('/ordering/Confirm')}>Continue</button>
           </div>      
         </div>
       </div>
