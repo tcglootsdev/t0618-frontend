@@ -7,42 +7,42 @@ const Settings = () => {
   const [type, setType] = useState('edit');
   return (
     <section>
-      <div className="grid grid-cols-12 bg-[#F9F9F9] h-screen">
-        <div className="col-span-7 bg-white p-5 h-full">
+      <div className="grid lg:grid-cols-12 sm:grid-cols-1 bg-[#F9F9F9] h-screen">
+        <div className="sm:col-span-7 col-span-5 bg-white p-5 h-full">
           {type != 'edit' && 
-          <div className="flex justify-between mb-5">
-            <div className="p-5 rounded-md bg-[#F9F9F9]">
+          <div className="sm:flex grid grid-cols-2 justify-between mb-5">
+            <div className="p-5 rounded-md bg-[#F9F9F9] sm:m-0 m-2">
               <img src="/images/Setting/VisaPay.png" />
             </div>
-            <div className="p-5 rounded-md bg-[#F9F9F9]">
+            <div className="p-5 rounded-md bg-[#F9F9F9] sm:m-0 m-2">
               <img src="/images/Setting/Mastercard.png" />
             </div>
-            <div className="p-5 rounded-md bg-[#F9F9F9]">
+            <div className="p-5 rounded-md bg-[#F9F9F9] sm:m-0 m-2">
               <img src="/images/Setting/GooglePay.png" />
             </div>
-            <div className="p-5 rounded-md bg-[#F9F9F9]">
+            <div className="p-5 rounded-md bg-[#F9F9F9] sm:m-0 m-2">
               <img src="/images/Setting/ApplePay.png" />
             </div>
-            <div className="p-5 rounded-md bg-[#F9F9F9]">
+            <div className="p-5 rounded-md bg-[#F9F9F9] sm:m-0 m-2">
               <img src="/images/Setting/MBPay.png" />
             </div>
           </div>
           }
-          <div className="flex justify-between mb-5 gap-5">
-            <input disabled={flag} autoFocus placeholder="Sarah" className="p-4 w-full text-lg bg-[#F9F9F9] text-black rounded-md"/>
+          <div className="sm:flex justify-between gap-5">
+            <input disabled={flag} autoFocus placeholder="Sarah" className="p-4 w-full sm:mb-0 mb-5 text-lg bg-[#F9F9F9] text-black rounded-md"/>
             <input disabled={flag} placeholder="Smith" className="p-4 w-full text-lg bg-[#F9F9F9] text-black rounded-md"/>
-          </div>
-          <div className="flex justify-between mb-5 gap-5">
-            <input disabled={flag} type="email" placeholder="Sarah@gmail.com" className="p-4 w-full text-lg bg-[#F9F9F9] text-black rounded-md"/>
+          </div>1
+          <div className="sm:flex justify-between sm:mb-5 mb-5 gap-5">
+            <input disabled={flag} type="email" placeholder="Sarah@gmail.com" className="p-4 w-full sm:mb-0 mb-5 text-lg bg-[#F9F9F9] text-black rounded-md"/>
             <input disabled={flag} placeholder="Smith" className="p-4 text-lg bg-[#F9F9F9] w-full text-black rounded-sm"/>
           </div>
-          <div className="flex justify-between mb-5 gap-5">
-            <input disabled={flag} type="password" placeholder="password" className="p-4 w-full text-lg bg-[#F9F9F9] text-black rounded-md"/>
-            <input type="password" className="p-4 w-full text-lg bg-white text-black rounded-md"/>
+          <div className="sm:flex justify-between sm:mb-5 gap-5">
+            <input disabled={flag} type="password" placeholder="password" className="p-4 w-full mb-5 text-lg bg-[#F9F9F9] text-black rounded-md"/>
+            <input type="password" className="p-4 w-full text-lg bg-white text-black rounded-md" disabled/>
           </div>
         </div>
 
-        <div className="col-span-5 rounded-sm bg-white h-dvh p-5">
+        <div className="col-span-5 rounded-sm bg-white sm:h-dvh p-5">
           <div className="grid rounded-md bg-[#F9F9F9] border content-between h-full">
             <div>
               <div className="rounded-md bg-white p-7 m-5">

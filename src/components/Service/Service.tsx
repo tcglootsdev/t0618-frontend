@@ -3,10 +3,10 @@ import { Button } from "@material-tailwind/react";
 
 function Service() {
   return (
-    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-white py-6 sm:py-12">
+    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-white py- sm:py-12">
       <div className="min-h-28 ">
         <div className="max-w-screen-xl mx-auto py-4 ">
-          <div>
+          <div className="ms-4 sm:ms-0">
             <h6 className="font-bold text-start uppercase font-serif font-thin text-3xl text-gray-400">
               Our Services
             </h6>
@@ -17,7 +17,7 @@ function Service() {
             {/* <div className="absolute inset-0 h-full w-full bg-gray-900/75" /> */}
             <img src="/images/Home/img_type_main.png" className="" alt="" />
             
-            <div className="absolute inset-0 h-full w-1/2 bg-gray-700/75" >
+            <div className="absolute sm:inset-y-0 sm:left-0 sm:h-full sm:w-1/2 inset-x-0 bottom-0 h-1/2 w-full bg-gray-700/75" >
               <div className="my-48 mx-20">
                 <p className="font-serif italic font-thin text-4xl uppercase mb-16 mt-16" color="white">
                   CABELO NATURAL
@@ -33,7 +33,34 @@ function Service() {
           </div>
 
           <div className="mt-4 grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
-            <article className="flex bg-[#FAF3F2] transition hover:shadow-xl">
+            <article className="hidden sm:block sm:flex bg-[#FAF3F2] transition hover:shadow-xl">
+              <div className="sm:basis-56">
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                  className="aspect-square h-full w-full object-cover"
+                />
+              </div>
+
+              <div className="flex flex-1 flex-col justify-between">
+                <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                  <a href="#">
+                    <h3 className="font-bold uppercase text-gray-900">
+                      Finding the right guitar for your style - 5 tips
+                    </h3>
+                  </a>
+
+                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                    pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                    quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                    atque dignissimos. Molestias explicabo corporis voluptatem?
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article className="hidden sm:block sm:flex bg-[#EFEDE7] transition hover:shadow-xl">
               <div className="hidden sm:block sm:basis-56">
                 <img
                   alt=""
@@ -60,7 +87,7 @@ function Service() {
               </div>
             </article>
 
-            <article className="flex bg-[#EFEDE7] transition hover:shadow-xl">
+            <article className="hidden sm:block sm:flex bg-[#FAF6F2] transition hover:shadow-xl">
               <div className="hidden sm:block sm:basis-56">
                 <img
                   alt=""
@@ -87,7 +114,7 @@ function Service() {
               </div>
             </article>
 
-            <article className="flex bg-[#FAF6F2] transition hover:shadow-xl">
+            <article className="hidden sm:block sm:flex bg-[#FAF6F2] transition hover:shadow-xl">
               <div className="hidden sm:block sm:basis-56">
                 <img
                   alt=""
@@ -114,34 +141,7 @@ function Service() {
               </div>
             </article>
 
-            <article className="flex bg-[#FAF6F2] transition hover:shadow-xl">
-              <div className="hidden sm:block sm:basis-56">
-                <img
-                  alt=""
-                  src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                  className="aspect-square h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="flex flex-1 flex-col justify-between">
-                <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                  <a href="#">
-                    <h3 className="font-bold uppercase text-gray-900">
-                      Finding the right guitar for your style - 5 tips
-                    </h3>
-                  </a>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                    pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                    quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                    atque dignissimos. Molestias explicabo corporis voluptatem?
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article className="flex bg-[#EFEDE7] transition hover:shadow-xl">
+            <article className="hidden sm:block sm:flex bg-[#EFEDE7] transition hover:shadow-xl">
               <div className="hidden sm:block sm:basis-56">
                 <img
                   alt=""

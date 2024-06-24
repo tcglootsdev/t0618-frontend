@@ -55,13 +55,13 @@ const Service = () => {
       <div className="mb-5">
         <p className="text-black text-xl">Recommended</p>
       </div>
-      <div className="grid grid-cols-5">
+      <div className="grid sm:grid-cols-5 grid-cols-1">
         <div className="col-span-3">
-          {cards_data.map((card)=> {
-            return <Card info={card} />
+          {cards_data.map((card,idx)=> {
+            return <Card key={idx} info={card} />
           })}
         </div>
-        <div className="grid col-span-2 bg-[#F9F9F9] content-between rounded-lg p-5 mx-5 h-screen">
+        <div className="grid col-span-2 bg-[#F9F9F9] content-between rounded-lg p-5 mx-5 sm:h-screen">
           <div>
             <div className="flex gap-5 mb-12">
               <div>

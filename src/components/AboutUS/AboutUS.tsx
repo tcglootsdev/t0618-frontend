@@ -5,8 +5,8 @@ import { IconButton, Typography } from "@material-tailwind/react";
 function AboutUS() {
   return (
     // <section>
-        <div className="grid grid-cols-5 bg-[#FAF6F2]">
-          <div className="col-span-2">
+        <div className="grid lg:grid-cols-5 sm:grid-cols-1 bg-[#FAF6F2]">
+          <div className="sm:col-span-2 sm:block hidden">
             <img
               alt=""
               src="/images/Home/img_submain.png"
@@ -14,7 +14,7 @@ function AboutUS() {
             />
           </div>
 
-          <div className="col-span-3 my-auto mx-48  divide-dashed px-8">
+          <div className="col-span-3 sm:my-auto my-16 sm:mx-48 mx-6 divide-dashed sm:px-8 px-4 sm:text-start text-center">
             <article className="space-y-4 text-gray-600">
               <h2 className="text-2xl font-medium">About US</h2>
               <p className="text-sm">

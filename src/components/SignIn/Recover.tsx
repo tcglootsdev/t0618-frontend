@@ -6,8 +6,8 @@ const Recover = () => {
   const router = useRouter();
   return (
     <section>
-      <div className="grid grid-cols-5 bg-[#F9F9F9]">
-        <div className="col-span-2">
+      <div className="grid lg:grid-cols-5 sm:grid-cols-1 bg-[#F9F9F9]">
+        <div className="sm:col-span-2 col-span-3">
           <div className="px-8 py-12 sm:px-8 sm:py-10">
             <div className="mt-8">
               <h1 className="text-4xl font-bold text-black">Password Recovery</h1>
@@ -16,7 +16,7 @@ const Recover = () => {
               <form>
                 <div>
                   <div className="relative">
-                    <input type="password" id="password" name="password" placeholder="New password" className="w-full sm:border-black rounded-md text-lg text-black sm:p-3 sm:mb-4 focus:border-blue-500 focus:ring-blue-500 bg-[#E0E0E0]" required aria-describedby="password-error" />
+                    <input type="password" id="password" name="password" placeholder="New password" className="w-full sm:border-black rounded-md text-lg text-black p-3 sm:p-3 sm:mb-4 focus:border-blue-500 focus:ring-blue-500 bg-[#E0E0E0]" required aria-describedby="password-error" />
                     <button type="button" data-hs-toggle-password='{
                         "target": "#hs-toggle-password"
                       }' className="absolute top-0 end-0 p-3.5 rounded-e-md">
@@ -40,7 +40,7 @@ const Recover = () => {
 
                 <div className="mt-8">
                   <div className="relative">
-                    <input type="password" id="password" name="password" placeholder="New password" className="w-full sm:border-black rounded-md text-lg text-black sm:p-3 sm:mb-4 focus:border-blue-500 focus:ring-blue-500 bg-[#E0E0E0]" required aria-describedby="password-error" />
+                    <input type="password" id="password" name="password" placeholder="Confirm password" className="w-full sm:border-black rounded-md text-lg text-black p-3 sm:p-3 sm:mb-4 focus:border-blue-500 focus:ring-blue-500 bg-[#E0E0E0]" required aria-describedby="password-error" />
                     <button type="button" data-hs-toggle-password='{
                         "target": "#hs-toggle-password"
                       }' className="absolute top-0 end-0 p-3.5 rounded-e-md">
